@@ -505,7 +505,8 @@
 
   .episode-coming {
     cursor: default;
-    opacity: 0.82;
+    opacity: 0.72;
+    background: #F4EEDC;
   }
   
   .episode-coming:hover {
@@ -513,12 +514,28 @@
     box-shadow: var(--shadow);
   }
   
+  .episode-coming .episode-num {
+    background: #6F766F;
+  }
+  
+  .episode-coming .episode-title {
+    color: #5C665E;
+  }
+  
+  .episode-coming .episode-desc {
+    color: #7B6A55;
+  }
+  
   .episode-status {
-    margin-top: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(201,168,76,0.16);
+    color: var(--green-deep);
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 0.72rem;
     letter-spacing: 0.12em;
-    color: var(--gold);
   }
   
   /* ===== CHARACTERS ===== */
