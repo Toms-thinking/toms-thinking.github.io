@@ -104,12 +104,27 @@
   }
 
   .hero-title {
-    font-size: clamp(2.6rem, 8vw, 5rem);
+    font-size: clamp(2.4rem, 7vw, 5rem);
     font-weight: 500;
     color: var(--warm-white);
-    line-height: 1.2;
+    line-height: 1.15;
     letter-spacing: 0.05em;
     margin-bottom: 12px;
+  }
+  
+  .hero-title span {
+    display: inline-block;
+  }
+  
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: clamp(2.2rem, 10vw, 3.2rem);
+      line-height: 1.18;
+    }
+  
+    .hero-title span {
+      display: block;
+    }
   }
 
   .hero-title-en {
@@ -742,7 +757,10 @@
 <section class="hero">
   <div class="hero-content">
     <p class="hero-eyebrow">Marks Project presents</p>
-    <h1 class="hero-title">物知りトムさん</h1>
+    <h1 class="hero-title">
+      <span class="title-main">物知りトムさんの</span>
+      <span class="title-accent">大冒険</span>
+    </h1>
     <span class="hero-title-en">The Knowledgeable Tom</span>
     <div class="hero-divider"></div>
 
