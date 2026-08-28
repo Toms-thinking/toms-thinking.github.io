@@ -509,6 +509,10 @@
     color: var(--green-deep);
     margin-bottom: 6px;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
   }
 
   .episode-desc {
@@ -689,6 +693,8 @@
   letter-spacing: 0.08em;
   vertical-align: middle;
   animation: newGlow 1.6s ease-in-out infinite;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 @keyframes newGlow {
