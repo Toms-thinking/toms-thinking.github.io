@@ -327,7 +327,18 @@
     position: relative;
     box-shadow: var(--shadow);
   }
-
+  .about-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+  
+  @media (max-width: 760px) {
+    .about-image {
+      width: 88%;
+      margin: 0 auto;
+    }
+  }  
   .world-card::before {
     content: '';
     position: absolute;
