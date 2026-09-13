@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toms-thinking.github.io/sitemap.xml

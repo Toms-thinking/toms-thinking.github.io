@@ -3,7 +3,35 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>物知りトムさん — 親子で読める、やさしいなぞとき物語</title>
+<title>物知りトムさん｜公式ホームページ</title>
+<meta name="description" content="物知りトムさんの公式ホームページ。親子で読める、やさしいなぞとき物語の世界をご紹介しています。19世紀ヨーロッパ風の町リンドルを舞台に、トムさんと仲間たちのキャラクター紹介や、身近なふしぎを解き明かすお話、noteで読めるエピソードへのリンクを掲載しています。">
+<link rel="canonical" href="https://toms-thinking.github.io/">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta property="og:title" content="物知りトムさん｜公式ホームページ">
+<meta property="og:description" content="物知りトムさんの公式ホームページ。親子で読める、やさしいなぞとき物語の世界をご紹介しています。19世紀ヨーロッパ風の町リンドルを舞台に、トムさんと仲間たちのキャラクター紹介や、身近なふしぎを解き明かすお話、noteで読めるエピソードへのリンクを掲載しています。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://toms-thinking.github.io/">
+<meta property="og:image" content="https://toms-thinking.github.io/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="リンドルの町と物知りトムさん、メグ、ガフ">
+<meta property="og:site_name" content="物知りトムさん">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="物知りトムさん｜公式ホームページ">
+<meta name="twitter:description" content="物知りトムさんの公式ホームページ。親子で読める、やさしいなぞとき物語の世界をご紹介しています。19世紀ヨーロッパ風の町リンドルを舞台に、トムさんと仲間たちのキャラクター紹介や、身近なふしぎを解き明かすお話、noteで読めるエピソードへのリンクを掲載しています。">
+<meta name="twitter:image" content="https://toms-thinking.github.io/images/ogp.jpg">
+<meta name="twitter:image:alt" content="リンドルの町と物知りトムさん、メグ、ガフ">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "物知りトムさん",
+  "alternateName": "物知りトムさんの大冒険",
+  "url": "https://toms-thinking.github.io/",
+  "description": "物知りトムさんの公式ホームページ。親子で読める、やさしいなぞとき物語の世界をご紹介しています。19世紀ヨーロッパ風の町リンドルを舞台に、トムさんと仲間たちのキャラクター紹介や、身近なふしぎを解き明かすお話、noteで読めるエピソードへのリンクを掲載しています。",
+  "inLanguage": "ja"
+}</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -42,6 +70,7 @@
 
   img {
     max-width: 100%;
+    height: auto;
     display: block;
   }
 
@@ -551,7 +580,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .episode-desc {
@@ -828,12 +857,17 @@
   }
   /* ===== FADE IN ===== */
   .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
 
-  .fade-in.visible {
+  .motion-ready .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .motion-ready .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
   }
@@ -844,7 +878,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-eyebrow">Marks Project presents</p>
+    <p class="hero-eyebrow">物知りトムさん 公式ホームページ</p>
     <h1 class="hero-title">
       <span class="title-main">物知りトムさんの</span>
       <span class="title-accent">大冒険</span>
@@ -879,7 +913,7 @@
 <!-- WORLD IMAGE -->
 <section class="world-visual">
   <div class="world-visual-inner fade-in">
-    <img src="images/title2.png" alt="リンドルの町とトムさんたち">
+    <img src="images/title2.webp" alt="リンドルの町と物知りトムさん、メグ、ガフ" width="1600" height="854" loading="eager" decoding="async">
   </div>
 </section>
 
@@ -894,13 +928,12 @@
 
     <div class="about-grid">
       <div class="about-image fade-in">
-        <img src="images/7spring.png"
-             alt="栗の木の下で本を読むトムさん">
+        <img src="images/7spring.webp" alt="栗の木の下で本を読む物知りトムさん" width="1254" height="1254" loading="lazy" decoding="async">
       </div>
       
       <div class="fade-in">
         <p class="about-lead">
-          トムさんは、学校よりも栗の木の下が好きな少年です。本を読み、自然を観察し、気がつけば町のみんなが首をかしげる“ふしぎ”の答えにたどりついてしまいます。
+          物知りトムさんは、学校よりも栗の木の下が好きな少年です。本を読み、自然を観察し、気がつけば町のみんなが首をかしげる“ふしぎ”の答えにたどりついてしまいます。
         </p>
         <p class="section-text">
           仲間のメグ、ガフ、ピップ、ホーク、カトリーヌ——それぞれに得意なことがあり、みんなで力を合わせると、リンドルの町に小さな発見ややさしいできごとが生まれます。<br><br>
@@ -909,7 +942,7 @@
       </div>
     
       <div class="world-card fade-in">
-        <p class="world-card-title">舞台：リンドルの町</p>
+        <h3 class="world-card-title">舞台：リンドルの町</h3>
         <p class="world-card-body">
           19世紀ヨーロッパ風の架空の町。石畳の通り、教会の鐘、パン屋の煙突、そして丘の上に立つ大きな栗の木。<br><br>
           ギルバート神父の勉強会、エドワード巡査ののんびりした見回り、カトリーヌの屋敷に響くコツコツという靴音。町のすみずみに、小さな物語が息づいています。
@@ -927,21 +960,21 @@
 
     <div class="recommend-grid">
       <div class="recommend-card fade-in">
-        <p class="recommend-title">読み聞かせをしたい方に</p>
+        <h3 class="recommend-title">読み聞かせをしたい方に</h3>
         <p class="recommend-text">
           1話ごとに区切りよく読めるので、寝る前や親子の読書時間にぴったりです。こわすぎず、あと味のやさしいお話を目指しています。
         </p>
       </div>
 
       <div class="recommend-card fade-in">
-        <p class="recommend-title">自分で読みはじめる子に</p>
+        <h3 class="recommend-title">自分で読みはじめる子に</h3>
         <p class="recommend-text">
           トムさんたちの会話や、町で起こる身近なふしぎを追いかけながら、楽しく物語に入っていけます。小さな発見の積み重ねが魅力です。
         </p>
       </div>
 
       <div class="recommend-card fade-in">
-        <p class="recommend-title">児童書の雰囲気が好きな大人にも</p>
+        <h3 class="recommend-title">児童書の雰囲気が好きな大人にも</h3>
         <p class="recommend-text">
           少しクラシックな町の空気、温かい登場人物たち、知識と観察で答えに近づく面白さ。どこか懐かしい気持ちで読めるシリーズです。
         </p>
@@ -959,7 +992,7 @@
     <div class="start-grid">
       <div class="start-card fade-in">
         <span class="start-badge">まずはこちら</span>
-        <p class="start-title">第1話を読む</p>
+        <h3 class="start-title">第1話を読む</h3>
         <p class="start-text">
           トムさんと相棒ピップ、そしてリンドルの町との出会いがわかる入口です。世界観を知るなら、まずはここから。
         </p>
@@ -968,20 +1001,20 @@
 
       <div class="start-card fade-in">
         <span class="start-badge">無料でたのしむ</span>
-        <p class="start-title">第3話まで無料で読めます</p>
+        <h3 class="start-title">第3話まで無料で読めます</h3>
         <p class="start-text">
             第1話を読んで気に入ったら、そのまま第2話・第3話も無料でお楽しみいただけます。
             親子で気軽に、リンドルの町のお話をお試しください。
         </p>
         <div class="free-episode-links">
-          <a href="第2話のURL" class="start-link">第2話を読む →</a>
-          <a href="第3話のURL" class="start-link">第3話を読む →</a>
+          <a href="https://note.com/toms_thinking/n/nea47579fe9aa" class="start-link">第2話を読む →</a>
+          <a href="https://note.com/toms_thinking/n/ne81ae689e385" class="start-link">第3話を読む →</a>
         </div>
       </div>
 
       <div class="start-card fade-in">
         <span class="start-badge">まとめ読み</span>
-        <p class="start-title">公開中のお話をまとめて見る</p>
+        <h3 class="start-title">公開中のお話をまとめて見る</h3>
         <p class="start-text">
           短編1〜20話と、これから広がる長編シリーズ。公開中の作品一覧が見られるページへの導線です。
         </p>
@@ -1004,7 +1037,7 @@
           <span class="episode-num-value">01</span>
         </div>
         <div class="episode-body">
-          <p class="episode-title">はじまりの栗の木</p>
+          <h3 class="episode-title">はじまりの栗の木</h3>
           <p class="episode-desc">トムさんと、相棒ピップの出会いのお話。リンドルの町の空気と、物語のはじまりが感じられる一編です。</p>
         </div>
       </a>
@@ -1015,7 +1048,7 @@
           <span class="episode-num-value">06</span>
         </div>
         <div class="episode-body">
-          <p class="episode-title">なぞなぞの日</p>
+          <h3 class="episode-title">なぞなぞの日</h3>
           <p class="episode-desc">ギルバート神父のなぞなぞが解けない。メグは栗の木へ走りました。ところが翌日、また走ってくることになるとは——。</p>
           </div>
       </a>
@@ -1026,7 +1059,7 @@
           <span class="episode-num-value">07</span>
         </div>
         <div class="episode-body">
-          <p class="episode-title">ガフのかがみ<span class="new-badge">NEW</span></p>
+          <h3 class="episode-title">ガフのかがみ<span class="new-badge">NEW</span></h3>
           <p class="episode-desc">パン屋のガフが鏡を置きました。いいアイデアのはずでした——その日の午後までは。</p>
         </div>
       </a>
@@ -1037,7 +1070,7 @@
           <span class="episode-num-value">08</span>
         </div>
         <div class="episode-body">
-          <p class="episode-title">夜の洋館（前編）</p>
+          <h3 class="episode-title">夜の洋館（前編）</h3>
           <p class="episode-desc">町はずれの洋館に、不思議な光り方をする灯りがついています。ある夜、ピップがトムを外へ引っ張り出しました。</p>
           <p class="episode-status">公開準備中</p>
         </div>
@@ -1049,7 +1082,7 @@
           <span class="episode-num-value">10</span>
         </div>
         <div class="episode-body">
-          <p class="episode-title">チーン！を奪ったお嬢様</p>
+          <h3 class="episode-title">チーン！を奪ったお嬢様</h3>
           <p class="episode-desc">その日の勉強会に、見慣れない女の子がいました。彼女はトムを見て、こっそりウィンクをしました。</p>
           <p class="episode-status">公開準備中</p>
         </div>
@@ -1070,9 +1103,9 @@
         <div class="character-color-band" style="background:#4A7A6A;"></div>
           <div class="character-card-body">
             <div class="character-thumb">
-              <img src="images/tom.png" alt="トムさん">
+              <img src="images/tom.webp" alt="物知りトムさん" width="348" height="348" loading="lazy" decoding="async">
             </div>
-            <p class="character-name-jp">トムさん</p>
+            <h3 class="character-name-jp">トムさん</h3>
           <span class="character-name-en">Tom</span>
           <p class="character-meta">主人公 · リンドルの町</p>
           <p class="character-desc">栗の木の下で本を読む物知り少年。学校より本が好き。でも気がつけば、町のみんなが困っている“ふしぎ”の答えを見つけてしまいます。</p>
@@ -1083,9 +1116,9 @@
         <div class="character-color-band" style="background:#C9845A;"></div>
           <div class="character-card-body">
             <div class="character-thumb">
-              <img src="images/pip.png" alt="ピップ">
+              <img src="images/pip.webp" alt="トムさんの相棒の犬、ピップ" width="348" height="348" loading="lazy" decoding="async">
             </div>
-            <p class="character-name-jp">ピップ</p>
+            <h3 class="character-name-jp">ピップ</h3>
           <span class="character-name-en">Pip</span>
           <p class="character-meta">トムの相棒 · 野良犬</p>
           <p class="character-desc">トムのそばにいつもいる大切な相棒。ちょっぴりいたずら好きで町のみんなを困らせることもありますが、ここぞというときに頼りになります。</p>
@@ -1096,9 +1129,9 @@
         <div class="character-color-band" style="background:#C94A6A;"></div>
           <div class="character-card-body">
             <div class="character-thumb">
-              <img src="images/meg.png" alt="メグ">
+              <img src="images/meg.webp" alt="メグ" width="241" height="241" loading="lazy" decoding="async">
             </div>
-            <p class="character-name-jp">メグ</p>
+            <h3 class="character-name-jp">メグ</h3>
           <span class="character-name-en">Meg</span>
           <p class="character-meta">幼なじみ · 世話焼き</p>
           <p class="character-desc">トムの幼なじみで、一番の世話焼き。「また勉強会さぼったでしょ！」が口ぐせ。でも困ったときは真っ先に栗の木へ走ってきます。</p>
@@ -1109,9 +1142,9 @@
         <div class="character-color-band" style="background:#8B6914;"></div>
           <div class="character-card-body">
             <div class="character-thumb">
-              <img src="images/gaff.png" alt="ガフ">
+              <img src="images/gaff.webp" alt="ガフ" width="348" height="348" loading="lazy" decoding="async">
             </div>
-            <p class="character-name-jp">ガフ</p>
+            <h3 class="character-name-jp">ガフ</h3>
           <span class="character-name-en">Gaff</span>
           <p class="character-meta">パン屋 · 力持ち</p>
           <p class="character-desc">町のパン屋の息子。優しくて力持ちで、いつも一生懸命。思いつきが少し空回りすることもありますが、その元気のよさはみんなの力になります。</p>
@@ -1121,7 +1154,7 @@
       <div class="character-card fade-in">
         <div class="character-color-band" style="background:#3A6A8A;"></div>
         <div class="character-card-body">
-          <p class="character-name-jp">ホーク</p>
+          <h3 class="character-name-jp">ホーク</h3>
           <span class="character-name-en">Hawk</span>
           <p class="character-meta">元サーカス · ハーモニカ</p>
           <p class="character-desc">元サーカス団の軽業師。「かっとびホーク」の名で空を飛んでいた少年。今は栗の木の下で、ときどきハーモニカを吹いています。</p>
@@ -1131,7 +1164,7 @@
       <div class="character-card fade-in">
         <div class="character-color-band" style="background:#6A4A9A;"></div>
         <div class="character-card-body">
-          <p class="character-name-jp">カトリーヌ</p>
+          <h3 class="character-name-jp">カトリーヌ</h3>
           <span class="character-name-en">Catherine</span>
           <p class="character-meta">お嬢様 · 洋館に滞在中</p>
           <p class="character-desc">町はずれの洋館に滞在するお嬢様。天真爛漫で好奇心いっぱい。ちょっと大胆なところもあって、リンドルに新しい風を運んできます。</p>
@@ -1141,7 +1174,7 @@
       <div class="character-card fade-in">
         <div class="character-color-band" style="background:#888888;"></div>
         <div class="character-card-body">
-          <p class="character-name-jp">グレイソン</p>
+          <h3 class="character-name-jp">グレイソン</h3>
           <span class="character-name-en">Greyson</span>
           <p class="character-meta">執事 · 細身の老紳士</p>
           <p class="character-desc">カトリーヌに付きそう執事。コツコツという靴音と、静かに見守るまなざしが印象的。穏やかですが、どこか只者ではありません。</p>
@@ -1152,9 +1185,9 @@
         <div class="character-color-band" style="background:#2C5A3A;"></div>
           <div class="character-card-body">
             <div class="character-thumb">
-              <img src="images/gilbert.png" alt="ギルバート神父">
+              <img src="images/gilbert.webp" alt="ギルバート神父" width="348" height="348" loading="lazy" decoding="async">
             </div>
-            <p class="character-name-jp">ギルバート神父</p>
+            <h3 class="character-name-jp">ギルバート神父</h3>
           <span class="character-name-en">Father Gilbert</span>
           <p class="character-meta">教会の神父 · なぞなぞ好き</p>
           <p class="character-desc">町の教会で子どもたちに読み書きを教える神父さん。なぞなぞと頭の体操が大好きで、子どもたちにもとても親しまれています。</p>
@@ -1187,6 +1220,8 @@
   <p class="quote-source fade-in">— トムさん、第6話より</p>
 </div>
 
+</section>
+
 <!-- FOOTER -->
 <footer>
   <p class="footer-logo">Marks Project</p>
@@ -1206,6 +1241,8 @@
 </footer>
 
 <script>
+  if ('IntersectionObserver' in window) {
+  document.documentElement.classList.add('motion-ready');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
@@ -1216,6 +1253,7 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  }
 </script>
 </body>
 </html>
