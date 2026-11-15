@@ -284,6 +284,141 @@
     50% { transform: translateX(-50%) translateY(6px); opacity: 0.7; }
   }
 
+  /* ===== HERO NEWS ===== */
+  .hero-news {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 10px 18px;
+    border: 1px solid rgba(201,168,76,0.65);
+    border-radius: 999px;
+    background: rgba(253,250,244,0.10);
+    color: var(--warm-white);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    transition: background 0.25s ease, transform 0.25s ease;
+    max-width: 100%;
+  }
+  .hero-news:hover { background: rgba(253,250,244,0.20); transform: translateY(-1px); }
+  .hero-news-badge {
+    flex: none;
+    background: var(--gold);
+    color: var(--green-deep);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .hero-news-text { text-align: left; }
+  .hero-news-arrow { flex: none; color: var(--gold-light); }
+  @media (max-width: 640px) {
+    .hero-news { font-size: 0.8rem; gap: 9px; padding: 9px 14px; }
+  }
+
+  /* ===== LONG STORIES ===== */
+  .long-stories { background-color: var(--cream); }
+  .long-lead {
+    font-size: 0.95rem;
+    line-height: 2.1;
+    color: var(--brown-mid);
+    margin: -14px 0 38px;
+    max-width: 720px;
+  }
+  .long-feature {
+    display: flex;
+    gap: 30px;
+    background: var(--warm-white);
+    border: 1px solid var(--cream-dark);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  .long-cover {
+    flex: none;
+    width: 190px;
+    aspect-ratio: 2 / 3;
+    border-radius: 6px 12px 12px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 6px 16px rgba(42,31,20,0.25);
+  }
+  .long-cover::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 9px;
+    border-left: 2px solid rgba(255,255,255,0.35);
+  }
+  .long-cover-1 { background: linear-gradient(160deg, #37503F 0%, #2C4A3E 55%, #1E332A 100%); }
+  .long-cover-soon { background: linear-gradient(160deg, #B9AE97, #9A8F74); }
+  .cover-tent { font-size: 2rem; line-height: 1.2; }
+  .cover-series { font-size: 0.68rem; letter-spacing: 0.25em; color: var(--gold-light); margin-top: 6px; }
+  .cover-title { font-size: 1.18rem; font-weight: 700; line-height: 1.55; margin-top: 8px; }
+  .cover-author { font-size: 0.68rem; opacity: 0.85; margin-top: 12px; }
+  .cover-q { font-size: 2.4rem; opacity: 0.55; line-height: 1.2; }
+  .cover-soon-text { font-size: 0.8rem; letter-spacing: 0.2em; margin-top: 6px; }
+  .long-cover-img {
+    flex: none;
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 6px 16px rgba(42,31,20,0.25);
+  }
+  .long-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+  .long-btn-sub {
+    border: 1.5px solid var(--green-mid);
+    color: var(--green-deep);
+    background: transparent;
+  }
+  .long-feature-body { flex: 1; }
+  .long-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .long-badge {
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    padding: 3px 11px;
+    border-radius: 999px;
+  }
+  .long-badge-gold { background: var(--gold); color: #fff; }
+  .long-badge-prep { background: var(--green-deep); color: #fff; }
+  .long-badge-soon { background: var(--cream-dark); color: var(--brown-mid); }
+  .long-feature-title { font-size: 1.45rem; font-weight: 600; color: var(--green-deep); margin: 12px 0 10px; }
+  .long-feature-desc { font-size: 0.93rem; line-height: 2.05; color: var(--brown-mid); }
+  .long-meta { font-family: 'Noto Sans JP', sans-serif; font-size: 0.8rem; color: var(--brown-mid); margin: 14px 0 18px; }
+  .long-mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .long-mini {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background: var(--warm-white);
+    border: 1px solid var(--cream-dark);
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .long-mini .long-cover { width: 84px; padding: 10px; }
+  .long-mini .cover-q { font-size: 1.5rem; }
+  .long-mini .cover-soon-text { font-size: 0.62rem; }
+  .long-mini-title { font-size: 1.05rem; font-weight: 600; color: var(--green-deep); margin: 8px 0 4px; }
+  .long-mini-desc { font-size: 0.85rem; line-height: 1.9; color: var(--brown-mid); }
+  @media (max-width: 760px) {
+    .long-feature { flex-direction: column; align-items: center; }
+    .long-feature-body { text-align: center; }
+    .long-badges { justify-content: center; }
+    .long-mini-grid { grid-template-columns: 1fr; }
+  }
+
   /* ===== SECTIONS ===== */
   section { padding: 96px 24px; }
 
@@ -900,6 +1035,12 @@
       <a href="https://note.com/toms_thinking/n/naf43d68cbfee" class="btn btn-primary">第1話を読む</a>
       <a href="#characters" class="btn btn-secondary">登場人物を見る</a>
     </div>
+
+    <a href="#long-stories" class="hero-news">
+      <span class="hero-news-badge">お知らせ</span>
+      <span class="hero-news-text">長編第1作『トムさんと謎のサーカス団』が、Kindleで発売になりました</span>
+      <span class="hero-news-arrow">→</span>
+    </a>
   </div>
 
   <div class="scroll-hint">
@@ -1085,6 +1226,58 @@
           <p class="episode-desc">その日は教会の勉強会の日。神父さんがなぞなぞを出します。トムさんが考えはじめたそのとき、突然きれいな声がして…</p>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- LONG STORIES -->
+<section class="long-stories" id="long-stories">
+  <div class="section-inner">
+    <p class="section-eyebrow fade-in">Long Stories</p>
+    <h2 class="section-title fade-in">長編シリーズ</h2>
+    <p class="long-lead fade-in">短編は note で、長編は Kindle でお届けします。リンドルの町を飛び出した、少し長くて少し不思議な大冒険のシリーズです。</p>
+
+    <div class="long-feature fade-in">
+      <img src="images/circus.webp" alt="『トムさんと謎のサーカス団』表紙" class="long-cover-img" width="600" height="663" loading="lazy" decoding="async">
+      <div class="long-feature-body">
+        <div class="long-badges">
+          <span class="long-badge long-badge-gold">長編第1作</span>
+          <span class="long-badge long-badge-prep">Kindleで発売中</span>
+        </div>
+        <h3 class="long-feature-title">トムさんと謎のサーカス団</h3>
+        <p class="long-feature-desc">いつもの短編よりも、少し長く。少し不思議で、少しドキドキする、トムさんたちの大冒険です。リンドルの町を飛び出したトムさんたちが、サーカス団をめぐる事件に出会います。</p>
+        <p class="long-meta">物知りトムさんの大冒険１ ／ Amazon Kindle</p>
+        <div class="long-buttons">
+          <a href="https://www.amazon.co.jp/dp/B0HMG7RTMR" class="btn btn-primary">Amazon で見る</a>
+          <a href="https://note.com/toms_thinking/n/nc1bcbc3c7225" class="btn long-btn-sub">お知らせを読む</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="long-mini-grid">
+      <div class="long-mini fade-in">
+        <div class="long-cover long-cover-soon" aria-hidden="true">
+          <span class="cover-q">？</span>
+          <span class="cover-soon-text">近日公開</span>
+        </div>
+        <div class="long-mini-body">
+          <span class="long-badge long-badge-soon">長編第2作</span>
+          <h4 class="long-mini-title">近日公開</h4>
+          <p class="long-mini-desc">タイトルと発売時期は、あらためてお知らせします。</p>
+        </div>
+      </div>
+
+      <div class="long-mini fade-in">
+        <div class="long-cover long-cover-soon" aria-hidden="true">
+          <span class="cover-q">？</span>
+          <span class="cover-soon-text">近日公開</span>
+        </div>
+        <div class="long-mini-body">
+          <span class="long-badge long-badge-soon">長編第3作</span>
+          <h4 class="long-mini-title">近日公開</h4>
+          <p class="long-mini-desc">タイトルと発売時期は、あらためてお知らせします。</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
